@@ -144,7 +144,6 @@ exports.handler = async (event, context) => {
       skill = Alexa.SkillBuilders.custom()
         .addRequestHandlers(
           GetHolaMundoHandler,
-          RepeatHandler,
           HelpHandler,
           FallbackHandler,
           CancelAndStopIntentHandler,
@@ -157,7 +156,6 @@ exports.handler = async (event, context) => {
         .addRequestHandlers(
           GetNewFactHandler,
           RepeatHandler,
-          HelpHandler,
           FallbackHandler,
           CancelAndStopIntentHandler,
           SessionEndedRequestHandler
